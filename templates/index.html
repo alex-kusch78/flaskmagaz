@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Магазин бытовой техники</title>
+{% endblock %}
+
+{% block body %}
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Наши товары</h1>
+        <p class="fs-5 text-muted">Приобретайте бытовую технику по самым выгодным ценам</p>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            {% for el in data %}
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">{{ el.title }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">{{ el.price }}рублей <small>
+                                 /за единицу</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Гарантия на все товары 2 года</li>
+                            <li>Бесплатная доставка по городу</li>
+                            <li>Поддержка по электронной почте</li>
+                            <li>Доступ к сервисному центру</li>
+                        </ul>
+                        <a href="/buy/{{ el.id }}" class="w-100 btn btn-lg btn-outline-primary">Купить</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

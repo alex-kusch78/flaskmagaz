@@ -1,0 +1,78 @@
+body {
+    background: darkgray;
+}
+
+header .fs-4 {
+    color: gold;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+header {
+    background: indigo;
+    padding: 15px 50px;
+    border: 5px solid red;
+}
+
+header nav {
+    list-style: none
+}
+
+header li {
+    color: #fff;
+    display: block;
+    transition: transform .6s ease;
+}
+
+header nav li:hover, header nav li a:hover {
+    color: #ed5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+footer {
+    background: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border: 5px solid red;
+}
+
+div .container button {
+    margin-left: 170px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div .card-body {
+    background: wheat;
+}
+
+div .card-header {
+    background: chocolate;
+
+}
+
+div .card-body a {
+    margin-left: 5px;
+    max-width: 100px;
+}
+
+
+.container {
+    background: goldenrod;
+}
+
+
+
+
+
+
+
+
